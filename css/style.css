@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* =============
+ Common Css Ends
+============== */
+
+
+/*=====================
+ Import Font Css Start
+==================*/
+
+@font-face {
+    font-family: 'cardo-ita';
+    src: url(../fonts/Cardo-Italic.ttf);
+}
+
+/*====================
+ Import Font Css Ends
+==================*/
+
+
+
+/* ============ 
+  Navbar Starts
+============= */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100px;
+    z-index: 9999;
+    background: transparent;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+
+.navbar .navbar-nav li a {
+    margin: 0 5px;
+    padding: 0 25px !important;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+}
+
+.bg {
+    height: 80px;
+    position: fixed;
+    background: #313454;
+    height: 80px;
+    box-shadow: 10px 0px 10px #313454;
+}
+
+.bg .collapse ul li a {
+    line-height: 80px;
+}
+
+/* ============ 
+  Navbar Ends
+============= */
+
+/*===========
+ Header Start
+========== */
+
+.header-bg {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding: 245px 0 0;
+    padding-bottom: 155px;
+}
+
+
+.header-bg::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(43, 46, 74, 0.95);
+    z-index: -1;
+}
+
+
+.header-bg .header-text {
+    text-align: center;
+    color: #fff;
+}
+
+.header-bg .header-text h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 71px;
+    text-transform: uppercase;
+    margin-bottom: 25px !important;
+}
+
+.header-bg .header-text p {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 33px;
+    margin-bottom: 75px !important;
+}
+
+.header-bg .header-text a {
+    color: #fff;
+    background: #E84545;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: 0 55px;
+    line-height: 45px;
+    border: 1px solid #E84545;
+    transition: all linear .4s;
+    border-radius: 3px;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+/*==========
+ Header Ends
+========= */
+
+
+
+/* ============
+Service Start
+ =========== */
+
+.service-bg {
+    padding: 120px 0;
+}
+
+
+.service .service-item {
+    text-align: center;
+}
+
+
+.service .service-item h3 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #2d3033;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.service .service-item p {
+    color: #6c7279;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 21px;
+}
+
+
+
+/* ===========
+ Service Ends
+ =========== */
+
+
+/* =============
+    Gallery Start
+ ============ */
+
+.gallery-bg .gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-bg .gallery-item img {
+    width: 100%;
+}
+
+.gallery-bg .gallery-item .gallery-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(232, 69, 69, 0.90);
+    transition: all linear .4s;
+    transform: scale(0);
+    text-align: center;
+    color: #fff;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+
+}
+
+.gallery-bg .gallery-item:hover .gallery-overlay {
+    transform: scale(1);
+}
+
+
+.gallery-bg .gallery-item .gallery-overlay .gallery-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+.gallery-bg .gallery-item .gallery-overlay .gallery-text h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.gallery-bg .gallery-item .gallery-overlay .gallery-text p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+/* ============
+   Gallery Ends
+ =========== */
+
+
+
+/* ===========
+   Team Start
+ ========== */
+
+.team-bg {
+    margin: 100px 0;
+}
+
+.team-bg .team .team-item img {
+    width: 100%;
+}
+
+.team-bg .team .team-item h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding-top: 25px;
+}
+
+.team-bg .team .team-item h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.team-bg .team .team-item p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c7279;
+    padding-top: 25px;
+}
+
+
+.team-bg .team .team-item a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #c6cacc;
+    border: 1px solid #c6cacc;
+    box-sizing: border-box;
+    margin-top: 21px;
+    transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+}
+
+
+/* ===========
+   Team Ends
+ ========== */
+
+
+/* =============
+ Feedback Start
+ ============ */
+
+
+.feedback-bg {
+    background-color: #53354a;
+    position: relative;
+    padding-top: 115px;
+    padding-bottom: 180px;
+}
+
+.feedback-bg::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/story.jpg) no-repeat center / cover;
+}
+
+.feedback-bg .feedback {
+    position: relative;
+}
+
+.feedback-bg .feedback .feedback-text-item {
+    color: #ffffff;
+    position: relative;
+}
+
+
+.feedback-bg .feedback .feedback-text-item p q {
+    font-family: 'cardo-ita';
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.feedback-bg .feedback .feedback-text-item h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    position: relative;
+}
+
+.feedback-bg .slick-dots {
+    padding-left: 0;
+    display: flex !important;
+    position: absolute;
+    left: 53%;
+    bottom: -85px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+
+}
+
+.feedback-bg .slick-dots li {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all linear .2s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+
+}
+
+.feedback-bg .slick-dots li button {
+    font-size: 0;
+    outline: 0;
+    border: 0;
+}
+
+.feedback-bg .slick-dots li.slick-active {
+    background: #fff;
+}
+
+
+/* ============
+Feedback Ends
+=========== */
+
+
+
+/* =============
+  Download Start
+ ============ */
+
+.download-bg {
+    margin: 100px 0;
+}
+
+.download-bg .download {
+    text-align: center;
+}
+
+
+.download-bg .download p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #2d3033;
+    padding-bottom: 15px;
+}
+
+.download-bg .download h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #2d3033;
+    padding-bottom: 30px;
+}
+
+.download-bg .download a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: #e84545;
+    color: #fff;
+    display: inline-block;
+    padding: 0 84px;
+    line-height: 46px;
+    border-radius: 3px;
+    transition: all linear .2s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+
+
+
+/* =============
+  Download Ends
+ ============ */
+
+
+
+/* ================
+ Footer Top Start
+ ================ */
+
+.footer-top-bg {
+    padding-top: 70px;
+    padding-bottom: 85px;
+    background: #3a3e64;
+}
+
+.footer-top-bg .footer-top .footer-item {
+    color: #fff;
+    text-align: center;
+}
+
+.footer-top-bg .footer-top .location p {
+    padding: 0 100px;
+}
+
+.footer-top-bg .footer-top .footer-item h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.footer-top-bg .footer-top .footer-item p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.footer-top-bg .footer-top .footer-item a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    margin-right: 5px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.footer-top-bg .footer-top .footer-item a:last-child i {
+    margin-right: 0;
+}
+
+
+
+/* ================
+ Footer Top Ends
+ ================ */
+
+
+/* ==================
+ Footer Bottom Start
+ ================= */
+
+.footer-bottom-bg {
+    padding: 30px 0;
+    background: #313454;
+}
+
+.footer-bottom-bg .footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom-bg .footer-bottom p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #808080;
+    line-height: 22.5px;
+    text-transform: capitalize;
+}
+
+.footer-bottom-bg .footer-bottom p a {
+    color: #808080;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.footer-bottom-bg .footer-bottom p i {
+    color: #e84545;
+    margin-right: 6px;
+}
+
+
+
+.footer-bottom-bg .footer-bottom p span {
+    color: #fff;
+    display: inline-block;
+    width: 140px;
+}
+
+
+.footer-bottom-bg .footer-bottom p span::first-letter {
+    text-transform: lowercase;
+}
+
+/* ================
+ Footer Bottom Ends
+ ================ */
+
+
+/* ==================
+ Scroll To Top Starts
+ ================= */
+
+.scrolltop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 99999;
+    line-height: 40px;
+    display: none;
+}
+
+.scrolltop img {
+    width: 40px;
+    height: 40px;
+}
+
+/* ================
+ Scroll To Top Ends
+ ================ */
+
+
+
+
+
+
+
+
+
+
+/*============
+  Effect Start
+ =========== */
+
+.navbar ul li a:hover {
+    color: red;
+    background: rgba(0, 0, 0, 0.253)0;
+}
+
+
+.header-bg .header-text a:hover {
+    background: transparent;
+}
+
+
+.download-bg .download a:hover {
+    background: #3a3e64;
+}
+
+
+
+.team-bg .team .team-item a i:hover {
+    border-color: #e84545;
+    color: #e84545;
+}
+
+.feedback-bg .feedback .feedback-text ul li:hover {
+    background: #fff;
+}
+
+.footer-top-bg .footer-top .footer-item a i:hover {
+    border-color: #e84545;
+    color: #e84545;
+}
+
+.footer-bottom-bg .footer-bottom p a:hover {
+    color: #e84545;
+}
+
+/*===========
+  Effect Ends
+ ========== */

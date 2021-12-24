@@ -654,8 +654,8 @@ Feedback Ends
  =========== */
 
 .navbar ul li a:hover {
-    color: red;
-    background: rgba(0, 0, 0, 0.253)0;
+    color: #e84545;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 

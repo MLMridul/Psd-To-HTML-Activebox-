@@ -90,6 +90,105 @@ ol {
   Navbar Ends
 ============= */
 
+
+/*==================
+  Small Menu Starts
+================= */
+
+.small-menu {
+    padding: 20px 0;
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+
+}
+
+.small-menu .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.small-menu button {
+    background: transparent;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+.small-menu button span {
+    background: #E84545;
+    color: #fff;
+    display: block;
+    padding: 6px 10px;
+    font-size: 20px;
+}
+
+.small-menu-bg {
+    background: #313454;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.offcanvas {
+    z-index: 999999999;
+}
+
+.offcanvas .offcanvas-header {
+    background: #313454;
+}
+
+#offcanvasExample .btn-close {
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+
+#offcanvasExample .btn-close .fa {
+    color: #fff;
+    font-size: 25px;
+}
+
+.offcanvas .offcanvas-body .collapse {
+    display: block;
+}
+
+.offcanvas .offcanvas-body .collapse ul li a {
+    color: #222;
+    font-family: var(--main-fo);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0px 17px !important;
+    line-height: 44px;
+    /* display: inline-block; */
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.offcanvas .offcanvas-body .collapse {
+    display: block;
+}
+
+.offcanvas .offcanvas-body .nav-item:hover .nav-link {
+    color: #fff !important;
+    background: #E84545;
+}
+
+/*================
+  Small Menu Ends
+=============== */
+
 /*===========
  Header Start
 ========== */

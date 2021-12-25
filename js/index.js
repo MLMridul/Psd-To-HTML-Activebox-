@@ -28,6 +28,11 @@ $(document).ready(function () {
         } else {
             $('.navbar').removeClass('bg');
         }
+        if (scrooling > 300) {
+            $('.small-menu').addClass('small-menu-bg');
+        } else {
+            $('.small-menu').removeClass('small-menu-bg');
+        }
     });
 
     $('.scrolltop').click(function () {
